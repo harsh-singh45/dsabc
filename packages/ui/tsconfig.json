@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // Library-specific overrides
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "moduleResolution": "node",
+    "allowJs": true,
+    
+    // Build output
+    "outDir": "dist",
+    "rootDir": "src",
+    
+    // Path aliases
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    
+    // Include test types
+    "types": ["@testing-library/jest-dom"]
+  },
+  "include": ["src/**/*", "jest.setup.d.ts"],
+  "exclude": ["dist", "node_modules", "**/*.tsbuildinfo"]
+}
