@@ -1,0 +1,36 @@
+{
+  "name": "@intelation/storybook",
+  "version": "1.1.0",
+  "description": "Storybook for Intelation Design System",
+  "private": true,
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@intelation/tokens": "*",
+    "@intelation/ui": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/addon-links": "^8.6.14",
+    "@storybook/blocks": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "@tailwindcss/postcss": "^4.1.16",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "autoprefixer": "^10.4.21",
+    "storybook": "^8.6.14",
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  }
+}

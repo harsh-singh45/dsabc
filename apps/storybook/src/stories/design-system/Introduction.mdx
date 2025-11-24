@@ -1,0 +1,157 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction" />
+
+# Intelation Design System
+
+Welcome to the Intelation Design System component library. This is an enterprise-grade design system providing consistent UI components, design tokens, and developer tools for building scalable applications efficiently.
+
+**Version:** 1.0.0 | **Status:** Production Ready
+
+---
+
+## Getting Started
+
+### Installation
+
+Install the design system packages in your project:
+
+```bash
+npm install @intelation/ui @intelation/tokens
+```
+
+### Basic Usage
+
+```tsx
+import { Button, Header, Input } from '@intelation/ui';
+import '@intelation/ui/styles';
+
+function App() {
+  return (
+    <>
+      <Header 
+        logo={<Logo />} 
+        navigationItems={[
+          { label: 'Home', href: '/' },
+          { label: 'About', href: '/about' }
+        ]} 
+      />
+      <Button 
+        variant="solid" 
+        colorScheme="primary" 
+        size="md"
+      >
+        Click me
+      </Button>
+      <Input 
+        placeholder="Enter text..." 
+        label="Username" 
+      />
+    </>
+  );
+}
+```
+
+### Tailwind CSS Setup
+
+Configure Tailwind to use the design tokens:
+
+```javascript
+// tailwind.config.js
+import tokensConfig from '@intelation/tokens/tailwind';
+
+export default {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  presets: [tokensConfig],
+};
+```
+
+---
+
+## What's Included
+
+### Packages
+
+**@intelation/tokens**
+- Design tokens (colors, spacing, typography, etc.)
+- Available in CSS, SCSS, JavaScript, TypeScript, and Tailwind formats
+- Automatic token resolution and transformation
+
+**@intelation/ui**
+- React component library built with TypeScript and Tailwind CSS
+- Accessible components using React Aria
+- Fully typed with comprehensive props and variants
+
+### Technology Stack
+
+- **React 18** - Component library framework
+- **TypeScript 5.2** - Type-safe development
+- **Tailwind CSS 4** - Utility-first styling
+- **React Aria 3.33** - Accessible component primitives
+- **Turborepo** - Monorepo orchestration
+
+---
+
+## Explore the Documentation
+
+Use the sidebar to navigate through:
+
+- **Design System** - Typography and foundational elements
+- **Components** - UI components like Button, Input, Card, Header, Footer, Logo
+- **Layout** - Layout components including Stack and chart visualizations
+
+Each component page includes:
+- Interactive examples
+- Prop documentation
+- Usage guidelines
+- Code snippets
+
+---
+
+## Resources
+
+- **GitHub Repository:** [github.com/intelation/design-system](https://github.com/intelation/design-system)
+- **NPM Packages:** `@intelation/ui` and `@intelation/tokens`
+- **Node.js:** >= 18.0.0
+- **npm:** >= 9.0.0
+
+---
+
+## Quick Reference
+
+### Essential Commands
+
+```bash
+# Install dependencies
+npm install
+
+# Start development
+npm run dev
+
+# Build all packages
+npm run build
+
+# Run Storybook
+npm run storybook
+```
+
+### Component Example
+
+```tsx
+import { Button } from '@intelation/ui';
+
+// Basic button
+<Button>Click me</Button>
+
+// With variants
+<Button variant="outline" size="lg" colorScheme="success">
+  Save Changes
+</Button>
+
+// With loading state
+<Button loading>Submitting...</Button>
+```
+
+---
+
+*Built with care by the Intelation team*
