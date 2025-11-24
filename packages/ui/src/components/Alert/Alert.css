@@ -1,0 +1,120 @@
+/* Alert Component */
+.alert {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--borderRadius-md);
+  border-left: 4px solid;
+  font-size: var(--fontSize-sm);
+  line-height: var(--lineHeight-normal);
+  position: relative;
+}
+
+/* Icon */
+.alert__icon {
+  flex-shrink: 0;
+  font-size: var(--fontSize-lg);
+  font-weight: var(--fontWeight-bold);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content */
+.alert__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.alert__title {
+  font-weight: var(--fontWeight-semibold);
+  margin-bottom: 4px;
+  font-size: var(--fontSize-sm);
+}
+
+.alert__message {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.alert__actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Close button */
+.alert__close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: var(--borderRadius-sm);
+  transition: background-color 0.2s ease;
+  font-size: var(--fontSize-lg);
+  line-height: 1;
+  opacity: 0.6;
+}
+
+.alert__close:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.alert__close:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Info variant */
+.alert--info {
+  background-color: var(--color-primary-alpha);
+  border-left-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+
+.alert--info .alert__icon {
+  color: var(--color-primary);
+}
+
+/* Success variant */
+.alert--success {
+  background-color: var(--color-success-alpha);
+  border-left-color: var(--color-success);
+  color: var(--color-text-primary);
+}
+
+.alert--success .alert__icon {
+  color: var(--color-success);
+}
+
+/* Warning variant */
+.alert--warning {
+  background-color: var(--color-warning-alpha);
+  border-left-color: var(--color-warning);
+  color: var(--color-text-primary);
+}
+
+.alert--warning .alert__icon {
+  color: var(--color-warning);
+}
+
+/* Error variant */
+.alert--error {
+  background-color: var(--color-danger-alpha);
+  border-left-color: var(--color-danger);
+  color: var(--color-text-primary);
+}
+
+.alert--error .alert__icon {
+  color: var(--color-danger);
+}

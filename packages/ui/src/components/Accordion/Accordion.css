@@ -1,0 +1,125 @@
+/* Accordion Container */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--borderRadius-lg);
+  background-color: var(--color-background-white);
+  overflow: hidden;
+}
+
+/* Accordion Item */
+.accordion__item {
+  border-bottom: 1px solid var(--color-border-primary);
+  transition: background-color 0.2s ease;
+}
+
+.accordion__item:last-child {
+  border-bottom: none;
+}
+
+.accordion__item:hover:not(.accordion__item--disabled) {
+  background-color: var(--color-background-secondary);
+}
+
+.accordion__item--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Accordion Trigger */
+.accordion__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: var(--fontSize-base);
+  font-weight: var(--fontWeight-medium);
+  color: var(--color-text-primary);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.accordion__trigger:hover:not(:disabled) {
+  color: var(--color-brand-600);
+}
+
+.accordion__trigger:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--color-border-focus);
+  z-index: 1;
+  position: relative;
+}
+
+.accordion__trigger:disabled {
+  cursor: not-allowed;
+}
+
+.accordion__trigger-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Accordion Icon */
+.accordion__icon {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+  color: var(--color-text-secondary);
+}
+
+.accordion__item--expanded .accordion__icon {
+  transform: rotate(180deg);
+  color: var(--color-brand-600);
+}
+
+.accordion__item--disabled .accordion__icon {
+  color: var(--color-text-tertiary);
+}
+
+/* Accordion Content Wrapper */
+.accordion__content-wrapper {
+  overflow: hidden;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 0;
+}
+
+/* Accordion Content */
+.accordion__content {
+  padding: 0 20px 20px;
+  color: var(--color-text-secondary);
+  font-size: var(--fontSize-sm);
+  line-height: var(--lineHeight-relaxed);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .accordion__content-wrapper,
+  .accordion__icon,
+  .accordion__trigger {
+    transition: none;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .accordion__trigger {
+    padding: 14px 16px;
+    font-size: var(--fontSize-sm);
+  }
+
+  .accordion__content {
+    padding: 0 16px 16px;
+    font-size: var(--fontSize-xs);
+  }
+
+  .accordion__icon {
+    width: 18px;
+    height: 18px;
+  }
+}

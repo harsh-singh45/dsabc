@@ -1,0 +1,81 @@
+/* All @import statements MUST come first (CSS spec requirement) */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Import design tokens */
+@import '../../../tokens/css/tokens.css';
+@import '../../../tokens/css/typography.css';
+
+/* Import component-specific styles */
+/* Form Components */
+@import '../components/forms/Button/Button.css';
+
+/* Root Level Components */
+@import '../components/Box/Box.css';
+@import '../components/Card/Card.css';
+@import '../components/Card/CardSection.css';
+@import '../components/Flex/Flex.css';
+@import '../components/Grid/Grid.css';
+@import '../components/Stack/Stack.css';
+
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles - MUST come after @import statements */
+body {
+  font-family: var(--fontFamily-sans);
+  margin: 0;
+  padding: 0;
+}
+
+/* Icon wrapper utility classes - using design tokens */
+@layer components {
+  .icon-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--borderRadius-lg);
+  }
+
+  /* Icon color variants using icon tokens */
+  .icon-wrapper--violet {
+    background: var(--color-icon-violet-bg);
+    color: var(--color-icon-violet-fg);
+  }
+
+  .icon-wrapper--green {
+    background: var(--color-icon-green-bg);
+    color: var(--color-icon-green-fg);
+  }
+
+  .icon-wrapper--cyan {
+    background: var(--color-icon-cyan-bg);
+    color: var(--color-icon-cyan-fg);
+  }
+
+  .icon-wrapper--orange {
+    background: var(--color-icon-orange-bg);
+    color: var(--color-icon-orange-fg);
+  }
+
+  .icon-wrapper--gray {
+    background: var(--color-icon-gray-bg);
+    color: var(--color-icon-gray-fg);
+  }
+
+  /* Icon size variants */
+  .icon-wrapper--sm {
+    font-size: var(--fontSize-base);
+  }
+
+  .icon-wrapper--md {
+    font-size: var(--fontSize-2xl);
+  }
+
+  .icon-wrapper--lg {
+    font-size: var(--fontSize-4xl);
+  }
+}
