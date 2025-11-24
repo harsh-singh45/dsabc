@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // Tokens package doesn't need declarations (it generates CSS/JS from JSON)
+    "declaration": false,
+    "declarationMap": false,
+    
+    // Build output
+    "outDir": "dist",
+    "rootDir": "src",
+    
+    // No emit for build scripts (handled by Node directly)
+    "noEmit": true
+  },
+  "include": ["src/**/*", "scripts/**/*"],
+  "exclude": ["dist", "node_modules", "css", "scss"]
+}

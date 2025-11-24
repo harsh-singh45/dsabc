@@ -1,0 +1,134 @@
+{
+  "color": {
+    "primary": "{color.brand.500}",
+    "primaryHover": "{color.brand.600}",
+    "primaryActive": "{color.brand.700}",
+    "primary-alpha": "rgba(59, 130, 246, 0.1)",
+    "secondary": "{color.gray.500}",
+    "secondaryHover": "{color.gray.600}",
+    "secondaryActive": "{color.gray.700}",
+    "secondary-alpha": "rgba(107, 114, 128, 0.1)",
+    "success": "{color.green.500}",
+    "successHover": "{color.green.600}",
+    "success-alpha": "rgba(34, 197, 94, 0.1)",
+    "warning": "{color.yellow.500}",
+    "warningHover": "{color.yellow.600}",
+    "warning-alpha": "rgba(234, 179, 8, 0.1)",
+    "danger": "{color.red.500}",
+    "dangerHover": "{color.red.600}",
+    "danger-alpha": "rgba(239, 68, 68, 0.1)",
+    "violet": "{color.violet.500}",
+    "violetHover": "{color.violet.600}",
+    "violetActive": "{color.violet.700}",
+    "violet-alpha": "rgba(105, 108, 255, 0.1)",
+    "white-alpha-10": "rgba(255, 255, 255, 0.1)",
+    "white-alpha-15": "rgba(255, 255, 255, 0.15)",
+    "white-alpha-20": "rgba(255, 255, 255, 0.2)",
+    "white-alpha-50": "rgba(255, 255, 255, 0.5)",
+    "white-alpha-70": "rgba(255, 255, 255, 0.7)",
+    "text": {
+      "primary": "{color.gray.900}",
+      "primary-dark": "{color.gray.50}",
+      "secondary": "{color.gray.600}",
+      "secondary-dark": "{color.gray.400}",
+      "tertiary": "{color.gray.400}",
+      "tertiary-dark": "{color.gray.500}",
+      "inverse": "{color.gray.50}",
+      "inverse-dark": "{color.gray.900}",
+      "metric-value": "rgba(34, 48, 62, 0.9)",
+      "metric-label": "rgba(34, 48, 62, 0.7)",
+      "grid-line": "rgba(34, 48, 62, 0.12)"
+    },
+    "background": {
+      "white": "{color.custom.white}",
+      "primary": "{color.gray.50}",
+      "primary-dark": "{color.gray.900}",
+      "secondary": "{color.gray.100}",
+      "secondary-dark": "{color.gray.800}",
+      "tertiary": "{color.gray.200}",
+      "tertiary-dark": "{color.gray.700}",
+      "inverse": "{color.gray.900}",
+      "inverse-dark": "{color.gray.50}",
+      "page": "{color.custom.pageBackground}",
+      "navigationActive": "{color.custom.navigationActiveBackground}"
+    },
+    "border": {
+      "primary": "{color.gray.200}",
+      "primary-dark": "{color.gray.700}",
+      "secondary": "{color.gray.300}",
+      "secondary-dark": "{color.gray.600}",
+      "focus": "{color.brand.500}"
+    },
+    "footer": {
+      "link": "{color.custom.link}",
+      "text": "{color.custom.footerText}"
+    },
+    "header": {
+      "gradientStart": "{color.custom.headerGradientStart}",
+      "gradientEnd": "{color.custom.headerGradientEnd}"
+    },
+    "chart": {
+      "cyan": "{color.chart.cyan}",
+      "green": "{color.chart.green}",
+      "violet": "{color.chart.violet}",
+      "lightGray": "{color.chart.lightGray}",
+      "purple": "{color.chart.purple}",
+      "teal": "{color.chart.teal}",
+      "darkGray": "{color.chart.darkGray}",
+      "red": "{color.chart.red}",
+      "gridLine": "{color.chart.gridLine}",
+      "zeroLine": "{color.chart.zeroLine}",
+      "borderWhite": "{color.chart.borderWhite}",
+      "textDark": "{color.chart.textDark}",
+      "textGray": "{color.chart.textGray}"
+    },
+    "icon": {
+      "violet": {
+        "bg": "{color.icon.violet.bg}",
+        "fg": "{color.icon.violet.fg}"
+      },
+      "green": {
+        "bg": "{color.icon.green.bg}",
+        "fg": "{color.icon.green.fg}"
+      },
+      "cyan": {
+        "bg": "{color.icon.cyan.bg}",
+        "fg": "{color.icon.cyan.fg}"
+      },
+      "orange": {
+        "bg": "{color.icon.orange.bg}",
+        "fg": "{color.icon.orange.fg}"
+      },
+      "gray": {
+        "bg": "{color.icon.gray.bg}",
+        "fg": "{color.icon.gray.fg}"
+      }
+    },
+    "overlay": {
+      "purple": "{color.custom.overlayPurple}",
+      "purpleLight": "{color.custom.overlayPurpleLight}",
+      "purpleDark": "{color.custom.overlayPurpleDark}"
+    },
+    "dropdown": {
+      "tonal": {
+        "background": "{color.icon.violet.bg}",
+        "text": "{color.custom.link}",
+        "divider": "{color.custom.violetAlpha32}"
+      }
+    }
+  },
+  "boxShadow": {
+    "button": "{boxShadow.violet}",
+    "buttonHover": "{boxShadow.violet-hover}",
+    "buttonActive": "{boxShadow.violet-active}",
+    "modal": "{boxShadow.overlay}",
+    "drawer": "{boxShadow.overlay}"
+  },
+  "typography": {
+    "fontFamily": {
+      "body": "{fontFamily.sans}",
+      "heading": "{fontFamily.display}",
+      "code": "{fontFamily.mono}"
+    }
+  }
+}

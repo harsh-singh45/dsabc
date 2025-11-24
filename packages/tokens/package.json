@@ -1,0 +1,48 @@
+{
+  "name": "@intelation/tokens",
+  "version": "1.6.0",
+  "description": "Design tokens for the Intelation design system",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intelation/design-system.git",
+    "directory": "packages/tokens"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist",
+    "css",
+    "scss",
+    "tailwind.config.js",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build-tokens.js",
+    "dev": "node scripts/build-tokens.js --watch",
+    "clean": "rimraf dist css scss tailwind.config.js",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "chokidar": "^3.5.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./css": "./css/tokens.css",
+    "./css/tokens.css": "./css/tokens.css",
+    "./css/typography.css": "./css/typography.css",
+    "./scss": "./scss/tokens.scss",
+    "./scss/tokens.scss": "./scss/tokens.scss",
+    "./tailwind": "./tailwind.config.js"
+  }
+}

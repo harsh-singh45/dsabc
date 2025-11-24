@@ -1,0 +1,214 @@
+/* Typography Utilities */
+/* Auto-generated - do not edit manually */
+
+/* Font Families */
+.font-sans { font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+.font-serif { font-family: Georgia, Cambria, Times New Roman, Times, serif; }
+.font-mono { font-family: Consolas, Monaco, Courier New, monospace; }
+.font-display { font-family: Manrope, sans-serif; }
+
+/* Font Sizes */
+.text-xs { font-size: 12px; }
+.text-2xs { font-size: 13px; }
+.text-sm { font-size: 14px; }
+.text-md { font-size: 15px; }
+.text-base { font-size: 16px; }
+.text-lg { font-size: 18px; }
+.text-xl { font-size: 20px; }
+.text-2xl { font-size: 24px; }
+.text-3xl { font-size: 30px; }
+.text-4xl { font-size: 36px; }
+.text-5xl { font-size: 48px; }
+.text-6xl { font-size: 60px; }
+.text-7xl { font-size: 72px; }
+.text-8xl { font-size: 96px; }
+.text-9xl { font-size: 128px; }
+
+/* Font Weights */
+.font-thin { font-weight: 100; }
+.font-extralight { font-weight: 200; }
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+/* Line Heights */
+.leading-18 { line-height: 18px; }
+.leading-20 { line-height: 20px; }
+.leading-28 { line-height: 28px; }
+.leading-none { line-height: 1; }
+.leading-tight { line-height: 1.25; }
+.leading-snug { line-height: 1.375; }
+.leading-footer { line-height: 1.467; }
+.leading-normal { line-height: 1.5; }
+.leading-relaxed { line-height: 1.625; }
+.leading-loose { line-height: 2; }
+
+/* Letter Spacing */
+.tracking-tighter { letter-spacing: -0.05em; }
+.tracking-tight { letter-spacing: -0.025em; }
+.tracking-normal { letter-spacing: 0em; }
+.tracking-wide { letter-spacing: 0.025em; }
+.tracking-wider { letter-spacing: 0.03em; }
+.tracking-widest { letter-spacing: 0.1em; }
+.tracking-chartLabel { letter-spacing: 0.4px; }
+
+/* Typography Variants */
+/* Predefined combinations for consistent text styling */
+
+.typography-display-2xl {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -0.02em;
+}
+
+.typography-display-xl {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+}
+
+.typography-display-lg {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+}
+
+.typography-heading-xl {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+}
+
+.typography-heading-lg {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.typography-heading-md {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.typography-heading-sm {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.typography-heading-xs {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.typography-body-xl {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.typography-body-lg {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.typography-body-md {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.typography-body-sm {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.typography-body-xs {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.typography-code-lg {
+  font-family: Consolas, Monaco, Courier New, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.typography-code-md {
+  font-family: Consolas, Monaco, Courier New, monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.typography-code-sm {
+  font-family: Consolas, Monaco, Courier New, monospace;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.typography-label-lg {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.typography-label-md {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.typography-label-sm {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.typography-caption {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+.typography-overline {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
