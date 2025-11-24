@@ -1,0 +1,42 @@
+{
+  "name": "@intelation/design-system-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A comprehensive design system demo showcasing modern development practices",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "storybook": "turbo run storybook --filter=storybook",
+    "build-storybook": "turbo run build-storybook --filter=storybook",
+    "playground": "turbo run dev --filter=playground",
+    "playground:build": "turbo run build --filter=playground",
+    "tokens:build": "turbo run build --filter=tokens",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=packages/* && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.8.0",
+    "turbo": "^1.10.16",
+    "typescript": "^5.2.2",
+    "prettier": "^3.0.3",
+    "eslint": "^8.50.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4"
+  },
+  "packageManager": "npm@10.2.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
