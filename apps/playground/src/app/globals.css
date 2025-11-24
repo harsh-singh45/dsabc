@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import '@intelation/tokens/css/tokens.css';
+@import '@intelation/tokens/css/typography.css';
+@import '@intelation/ui/styles';
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-text-primary);
+  background: var(--color-background-page);
+}
